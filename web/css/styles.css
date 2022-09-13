@@ -226,6 +226,43 @@ footer{
 
 /* =========== SERVICIOS =========== */
 
+.plans-container-services--card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 45%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 312px;
+    margin: 50px 20px 0;
+    padding: 0 15px;
+    background-color: var(--color-0);
+    border-radius: 15px;
+    box-shadow: 0 10px 15px 1px var(--color-3);
+}
+
+.plans-container-services--card img{
+    position: relative;
+    scroll-snap-align: center;
+    width: 50%;
+    height: 50%;
+    margin-left:20%;
+}
+
+
+.plan-card--sr{
+    height: 6vh;
+    width: 60%;
+    border-radius: 8px;
+    margin-top: 18%;
+    margin-left: 20%;
+    color: var(--color-4);
+    background-color: var(--color-7);
+    border: 1px solid var(--color-4);
+}
+.plans-container-services--card p{
+
+    color: var(--color-4);  
+}
 /* =========== CONTACTENOS =========== */
 .contact-container{
     height: 70vh;
