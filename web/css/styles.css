@@ -17,6 +17,8 @@
     --color-7: #60E6BB;
     --color-8: #46997F;
     --color-9: #111111;
+    --color-10: rgba(34,34,34,0.85);
+    --container-width: 1200px;
 }
 
 * {
@@ -49,6 +51,11 @@ header img {
     height: 200px;
     margin-top: -10px;
     align-self: center;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .header--title-container {
@@ -223,6 +230,77 @@ footer{
     padding: 10% 25% ;
     color: var(--color-0);
 }
+/* =========== HAMBURGER MENU =========== */
+
+.section{
+    padding: 2rem;
+    padding-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    max-width: var(--container-width);
+    min-height: 100vh;
+    text-align: center;
+}
+
+.panel{
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--color-10);
+    transition: transform .3s ease;
+    transform: translate(0, -100%);
+}
+
+.panel.is-active{
+    transform: translate(0,0);
+}
+
+
+.panel-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: 1vw;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-1);
+}
+
+.menu{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.menu a{
+    padding: 2rem;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--color-0);
+    transition: all 0.3s ease;
+}
+
+.menu a:hover{
+    font-weight: bold;
+    color: var(--color-4);
+    background-color: var(--color-3);
+}
 
 /* =========== SERVICIOS =========== */
 
@@ -240,29 +318,35 @@ footer{
     box-shadow: 0 10px 15px 1px var(--color-3);
 }
 
+.plans-container-services--card h3{
+    font-size: 1.6rem;
+    color: var(--color-5);
+}
+
 .plans-container-services--card img{
     position: relative;
     scroll-snap-align: center;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;    
     margin-left:20%;
 }
-
 
 .plan-card--sr{
     height: 6vh;
     width: 60%;
     border-radius: 8px;
-    margin-top: 18%;
+    margin-top: 8%;
     margin-left: 20%;
     color: var(--color-4);
     background-color: var(--color-7);
     border: 1px solid var(--color-4);
 }
-.plans-container-services--card p{
 
+.plans-container-services--card p{
+    font-size: 1.2rem;
     color: var(--color-4);  
 }
+
 /* =========== CONTACTENOS =========== */
 .contact-container{
     height: 70vh;
