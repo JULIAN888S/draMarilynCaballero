@@ -7,6 +7,8 @@
     <title>Nuestros Servicios | Doctora Marylin Caballero</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="icon" type="image/x-icon" href="/img/icons/logo.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/web/css/styles.css">
 </head>
@@ -22,14 +24,23 @@
             </p>
         </div>
     </header>
-        <button class="hamburger hamburger--collapse" type="button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
+    <button class="panel-btn hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <aside class="panel">
+        <nav class="menu">
+            <a href="/web/index.html">Inicio</a>
+            <a href="/web/services.html">Servicios</a>
+            <a href="/web/contactUs.html">Contactenos</a>
+            <a href="/web/about.html">Acerca de</a>
+        </nav>
+    </aside>     
     <main>
         <section class='plans-container--slider'>
             <article class="plans-container-services--card">
+                <p id="recomended-services"> Plan recomendado </p>
                 <div class="plan-info-container">
                     <h3 class="plan-card--title">Ortodoncia</h3>
                     <p class="plan-card--price"><img src="/img/icons/orthodoncy.png" alt="" srcset=""></p>
@@ -39,10 +50,9 @@
             </article>
 
             <article class="plans-container-services--card">
-                <p id="recomended"> Plan recomendado </p>
                     <div class="plan-info-container">
-                        <h3 class="plan-card--title">Valoración</h3>
-                        <p class="plan-card--price"><img src="/img/icons/endodoncy.png" alt="" srcset=""></p>
+                        <h3 class="plan-card--title">Odontologia General</h3>
+                        <p class="plan-card--price"><img class="service-img"src="/img/icons/search.png  " alt="" srcset=""></p>
                         <p class="plan-cars--saving">Ahorras comparadpo con anos anteriores</p>
                         <button class="plan-card--sr">Escoger este <span></span></button>
                     </div>
@@ -50,8 +60,35 @@
 
             <article class="plans-container-services--card">
                 <div class="plan-info-container">
-                    <h3 class="plan-card--title">Restauración</h3>
+                    <h3 class="plan-card--title">Endodoncia</h3>
                     <p class="plan-card--price"><img src="/img/icons/restauration.png" alt="" srcset=""></p>
+                    <p class="plan-cars--saving">Ahorras comparadpo con anos anteriores</p>
+                    <button class="plan-card--sr">Escoger este <span></span></button>
+                </div>
+            </article>
+
+            <article class="plans-container-services--card">
+                <div class="plan-info-container">
+                    <h3 class="plan-card--title">Rehabilitación oral</h3>
+                    <p class="plan-card--price"><img src="/img/icons/prosthesis.png" alt="" srcset=""></p>
+                    <p class="plan-cars--saving">Ahorras comparadpo con anos anteriores</p>
+                    <button class="plan-card--sr">Escoger este <span></span></button>
+                </div>
+            </article>
+
+            <article class="plans-container-services--card">
+                <div class="plan-info-container">
+                    <h3 class="plan-card--title">Cirugia oral</h3>
+                    <p class="plan-card--price"><img src="/img/icons/endodoncy.png" alt="" srcset=""></p>
+                    <p class="plan-cars--saving">Ahorras comparadpo con anos anteriores</p>
+                    <button class="plan-card--sr">Escoger este <span></span></button>
+                </div>
+            </article>
+
+            <article class="plans-container-services--card">
+                <div class="plan-info-container">
+                    <h3 class="plan-card--title">Diseño de sonrisa</h3>
+                    <p class="plan-card--price"><img src="/img/icons/cleaning.png" alt="" srcset=""></p>
                     <p class="plan-cars--saving">Ahorras comparadpo con anos anteriores</p>
                     <button class="plan-card--sr">Escoger este <span></span></button>
                 </div>
@@ -64,5 +101,7 @@
     <footer>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aliquam, ipsum amet repudiandae at maxime atque, fugit iusto aperiam aliquid</p>
     </footer>
+    <script src="/web/js/index.js" type="module"></script>    
+
 </body>
 </html>
