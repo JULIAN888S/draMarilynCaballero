@@ -10,21 +10,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
     <link rel="icon" type="image/x-icon" href="/img/icons/logo.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/web/css/styles.css">
 
 </head>
 <body>
     <header>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="/web/index.html">Inicio</a></li>
+          <li><a href="/web/services.html">Servicios</a></li>
+          <li><a href="/web/contactUs.html">Contactenos</a></li>
+          <li><a href="/web/about.html">Acerca de </a></li>
+        </ul>
+        
+      </nav>  
         <img src="/img/icons/logo.png" alt="" srcset="">
         <div class="header--title-container">
             <h1>
-                La mejor atencion odontologica en Soacha 
+                Doctora Marylin Caballero Guasca
             </h1>
             <p>
-                La Dra Marilyn Caballero te ayudara a mejorar tu salud dental de forma accesible.
+                La felicidad se escribe con una gran sonrisa
             </p>
-            <a href="#plans" class="header--button">Conoce nuestros servicios <span>i</span></a>
+            <a href="#plans" class="header--button">Conoce nuestros servicios <span></span></a>
         </div>
+        
     </header>
     <button class="panel-btn hamburger hamburger--collapse" type="button">
         <span class="hamburger-box">
@@ -38,9 +53,15 @@
             <a href="/web/contactUs.html">Contactenos</a>
             <a href="/web/about.html">Acerca de</a>
         </nav>
+        
     </aside>
+    <div class="watsapp">
+      <img class="wp-icon"src="/img/icons/wplogo.png" alt="" srcset="">
+      <a href="https://wa.me/ + número prefijo país "sin signo +" + número de teléfono"></a>
+    </div>
+    
     <main>
-        <section id="slider"><img src="/img/" alt=""></section>
+        <section id="slider"><img src="img/" alt=""></section>
         <section id ="plans" class="main-plans-container">
             <div class="plans--title">
                 <h2>Elige un plan adecuado para ti</h2>
@@ -52,7 +73,7 @@
                                 <h3 class="plan-card--title">Ortodoncia</h3>
                                 <p class="plan-card--price"><img src="/img/icons/orthodoncy.png" alt="" srcset=""></p>
                                 <p class="plan-cars--saving">Ahorras comparadpo con anos anteriores</p>
-                                <button class="plan-card--ca">Escoger este <span></span></button>
+                                <a href="/web/services.html">     <button class="plan-card--ca">Escoger este <span></span></button></a>
                             </div>
                     </article>
 
@@ -62,8 +83,8 @@
                                 <h3 class="plan-card--title">Valoración</h3>
                                 <p class="plan-card--price"><img src="/img/icons/endodoncy.png" alt="" srcset=""></p>
                                 <p class="plan-cars--saving">Ahorras comparadpo con anos anteriores</p>
-                                <button class="plan-card--ca">Escoger este <span></span></button>
-                            </div>
+                                <a href="/web/services.html">     <button class="plan-card--ca">Escoger este <span></span></button></a> 
+                              </div>
                     </article>
 
                     <article class="plans-container--card">
@@ -71,8 +92,8 @@
                             <h3 class="plan-card--title">Restauración</h3>
                             <p class="plan-card--price"><img src="/img/icons/restauration.png" alt="" srcset=""></p>
                             <p class="plan-cars--saving">Ahorras comparadpo con anos anteriores</p>
-                            <button class="plan-card--ca">Escoger este <span></span></button>
-                        </div>
+                            <a href="/web/services.html">     <button class="plan-card--ca">Escoger este <span></span></button></a> 
+                          </div>
                 </article>
                 </section>
             </div>
@@ -80,12 +101,50 @@
             <section>
                 <button class="plan-card--mo">Mas Servicios</button>
             </section>
-            <section class="about-index">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Asperiores praesentium quis maiores! Explicabo quod quisquam 
-                    nemo praesentium velit, facilis magnam deserunt ea minus nisi, 
-                    quia eius voluptatum culpa sed accusantium!</p>
-            </section>
+            <div class="wrapper">
+                <div class="slider" id="slider">
+                  <ul class="slides">
+                    <li class="slide" id="slide1">
+                      <a href="#">
+                        <p class="caption">Dra Marilyn caballero</p>
+                        <img src="/img/pictures/doc.jpeg" alt="photo 1">
+                      </a>
+                    </li>
+                    <li class="slide" id="slide2">
+                      <a href="#">
+                        <p class="caption">Has de tu sonrisa una obra de arte</p>
+                        <img src="/img/pictures/mounth.png" alt="photo 2">
+                      </a>
+                    </li>
+                    <li class="slide" id="slide3">
+                      <a href="#">
+                        <p class="caption"> Valoracion gratuita</p>
+                        <img src="/img/pictures/valoration.png" alt="photo 3">
+                      </a>
+                    </li>
+                    <li class="slide" id="slide4">
+                      <a href="#">
+                        <p class="caption">Productos para higiene bucal</p>
+                        <img src="/img/pictures/brush.png" alt="photo 4">
+                      </a>
+                    </li>
+                    <li class="slide">
+                      <a href="#">
+                        <p class="caption">Productos para el cuidado de la salud oral, según la necesidad de cada paciente.</p>
+                        <img src="/img/pictures/kin.png" alt="photo 1">
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <ul class="slider-controler">
+                    <li><a href="#slide1">&bullet;</a></li>
+                    <li><a href="#slide2">&bullet;</a></li>
+                    <li><a href="#slide3">&bullet;</a></li>
+                    <li><a href="#slide4">&bullet;</a></li>
+                    <li><a href="#slide5">&bullet;</a></li>
+                  </ul>
+                </div>
+            </div>
         </section>
         <section class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1610.5524065236352!2d-74.22435193264418!3d4.606085813409655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f75f31d62c8cd%3A0xaa782cc43d29940c!2sOdontologia%20doctora%20Marylin!5e0!3m2!1ses!2sco!4v1662590395342!5m2!1ses!2sco" width="270" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
